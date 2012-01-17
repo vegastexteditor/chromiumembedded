@@ -49,7 +49,8 @@ def run(args, **kwargs):
         if not quiet:
             sys.stdout.write(out)
     if cmd.wait() != 0:
-        raise Exception("Command failed: \"%s\"" % " ".join(args), output)
+        raise Exception("Command failed: \"%s\"" % " ".join(args),
+                        output if quiet else None)
     return output
 
 def get_current_branch(path):

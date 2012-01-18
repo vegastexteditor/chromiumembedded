@@ -1,0 +1,4 @@
+*.pyc
+cef.xcodeproj
+include/cef_version.h
+patch/patch_state.h
